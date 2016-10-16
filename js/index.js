@@ -9,4 +9,10 @@ $(function() {
     $(this).addClass('selected');
   });
 
+  $('#switcher').click(function(event) {
+    if (event.target == this) {
+      $('#switcher button').toggleClass('hidden');
+    }
+  });
+
 });
